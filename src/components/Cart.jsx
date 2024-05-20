@@ -75,13 +75,13 @@ export default function Cart({ product, dispatch }) {
                     <IconButton icon={<CloseIcon />} isRound size="sm" colorScheme='pink' variant={'outline'} fontSize={'10px'} onClick={() => dispatch(REMOVE({ id: product.id }))} />
                 </Td>
                 <Td>
-                    <div className='flex gap-2'>
+                    <h1 className='flex gap-2 text-[15px] font-[800]'>
                         $ {product.price}
-                    </div>
+                    </h1>
 
                 </Td>
                 <Td>
-                    <div className='flex gap-2 flex-wrap'>
+                    <div className='flex gap-2 flex-wrap text-[15px] font-[800]'>
                         $ {product.price * (product.quantity || 1)}
                         <small className='line-through'>${product.actualPrice || ((product.quantity || 1) * product.price + (((product.quantity || 1) * product.price) * (product.discountPercentage / 100))).toFixed(2)}</small>
                     </div>

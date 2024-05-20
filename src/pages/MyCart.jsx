@@ -110,7 +110,7 @@ export default function MyCart() {
 
     return (
         <>
-            <Box className="px-8 py-3 sticky top-0 z-10 bg-[#fff]">
+            <Box className="px-8 py-3 box '' md:sticky md:top-0 '' md:z-10 '' md:bg-[#fff]">
 
                 <Box className="flex justify-center items-center my-5 flex-wrap gap-5">
                     <Box className="mr-4 w-[220px] h-[100px] border-2 border-gray-500 p-4 rounded flex justify-center items-center  gap-2">

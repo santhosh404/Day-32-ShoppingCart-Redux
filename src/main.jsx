@@ -6,6 +6,7 @@ import { BrowserRouter } from 'react-router-dom'
 import { ChakraProvider } from '@chakra-ui/react'
 import { Provider } from 'react-redux'
 import { CartStore } from './redux/store/CartStore.jsx'
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
